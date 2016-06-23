@@ -14,5 +14,6 @@ func main() {
 	fmt.Scan(&smallNumber)
 	fmt.Print("Enter a big number: ")
 	fmt.Scan(&bigNumber)
-	fmt.Println(smallNumber, bigNumber)
+	remainder := bigNumber % smallNumber
+	fmt.Printf("Remainder of %d divided by %d is: %d \n", bigNumber, smallNumber, remainder)
 }
