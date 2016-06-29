@@ -12,14 +12,7 @@ package main
 import "fmt"
 
 func half(a int) (int, bool) {
-	quotient := a / 2
-	var isEven bool
-	if a%2 == 0 {
-		isEven = true
-	} else {
-		isEven = false
-	}
-	return quotient, isEven
+	return a / 2, a%2 == 0
 }
 
 func main() {
